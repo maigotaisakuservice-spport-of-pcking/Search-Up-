@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>設定 - Search365 Up</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="theme-light">
   <main class="settings-container">
-    <h2>設定</h2>
+    <h1>設定</h1>
 
     <section>
-      <h3>プロフィール情報</h3>
-      <p><strong>メールアドレス：</strong> <span id="email">取得中…</span></p>
-      <p><strong>会員ランク：</strong> <span id="rank">取得中…</span></p>
+      <h2>アカウント情報</h2>
+      <p>メール: <span id="user-email">読み込み中...</span></p>
+      <p>プラン: <span id="user-plan">-</span></p>
+      <p>現在のテーマ: <span id="current-theme">-</span></p>
+      <p id="ttl-info" style="display:none;"></p>
     </section>
 
-    <section id="theme-section" style="display:none;">
-      <h3>テーマ設定</h3>
-      <button id="theme-toggle">テーマ切り替え</button>
+    <section class="premium-only">
+      <h2>テーマ切り替え</h2>
+      <button onclick="setTheme('light')">ライト</button>
+      <button onclick="setTheme('dark')">ダーク</button>
+      <button onclick="setTheme('green')">グリーン</button>
     </section>
 
-    <section id="license-section" style="display:none;">
-      <h3>ライセンス分配</h3>
-      <p>招待するメールアドレス：</p>
-      <input type="email" id="invite-email" placeholder="invite@email.com" />
-      <button id="invite-btn">分配する</button>
-      <p id="invite-result"></p>
+    <section class="distributable-only">
+      <h2>ライセンス分配</h2>
+      <input type="email" id="invite-email" placeholder="分配先のメールアドレス">
+      <button onclick="distribute()">分配する</button>
+      <div id="distributed-list"></div>
     </section>
 
-    <a href="index.html">← ホームに戻る</a>
+    <section>
+      <h2>通知設定</h2>
+      <label><input type="checkbox" id="notify-toggle"> アップデート通知を受け取る</label>
+    </section>
   </main>
 
   <script type="module" src="firebase-init.js"></script>
