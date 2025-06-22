@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>アナリティクス - Search365 Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="theme-light">
+  <main class="analytics-container">
+    <h1>📊 利用アナリティクス</h1>
+
+    <section>
+      <h2>検索数の推移</h2>
+      <canvas id="searchTrendChart" width="400" height="200"></canvas>
+    </section>
+
+    <section>
+      <h2>時間帯別の利用傾向</h2>
+      <canvas id="timeChart" width="400" height="200"></canvas>
+    </section>
+
+    <section>
+      <h2>よく検索するキーワード</h2>
+      <ol id="keyword-list"></ol>
+    </section>
+
+    <section>
+      <h2>全体統計</h2>
+      <ul id="stats-list"></ul>
+    </section>
+  </main>
+
+  <script type="module" src="firebase-init.js"></script>
+  <script type="module" src="analytics.js"></script>
+</body>
+</html>
