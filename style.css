@@ -1,0 +1,98 @@
+/* 共通設定 */
+:root {
+  --main-bg: #ffffff;
+  --main-text: #222;
+  --accent-color: #99e6ff;
+  --primary-color: #bfffdc;
+  --link-color: #007acc;
+  --border-color: #ccc;
+}
+
+/* ダークテーマ */
+[data-theme="dark"] {
+  --main-bg: #121212;
+  --main-text: #e0e0e0;
+  --accent-color: #66c0ff;
+  --primary-color: #336655;
+  --link-color: #66c0ff;
+  --border-color: #444;
+}
+
+/* 全体レイアウト */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--main-bg);
+  color: var(--main-text);
+}
+
+header {
+  padding: 1em;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav a {
+  margin: 0 0.5em;
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 1em;
+  gap: 1em;
+}
+
+#search-input {
+  width: 60%;
+  max-width: 500px;
+  padding: 0.75em;
+  font-size: 1em;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+#search-btn {
+  padding: 0.75em 1.5em;
+  background: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--main-text);
+}
+
+#search-btn:hover {
+  opacity: 0.9;
+}
+
+#results {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.85em;
+  color: var(--main-text);
+  background: var(--primary-color);
+  margin-top: 3em;
+}
