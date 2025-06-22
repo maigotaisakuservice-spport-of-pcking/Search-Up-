@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ログイン - Search365 Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="auth-container">
+    <h2>ログイン / 新規登録</h2>
+    <p>メールアドレスを入力すると、ログイン用リンクが送られます。</p>
+
+    <input type="email" id="email" placeholder="your@email.com" />
+    <button id="send-link">ログインリンクを送信</button>
+
+    <p id="message"></p>
+    <a href="index.html">← ホームへ戻る</a>
+  </main>
+
+  <script type="module" src="auth.js"></script>
+  <script type="module" src="firebase-init.js"></script>
+</body>
+</html>
