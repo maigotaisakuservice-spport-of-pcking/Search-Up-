@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>メイン - Search365 Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+  <header>
+    <h1>Search365 Up</h1>
+  </header>
+
+  <main id="dashboard">
+    <section id="user-info">
+      <h2>ようこそ！</h2>
+      <p id="username">読み込み中...</p>
+      <p id="usertype"></p>
+    </section>
+
+    <nav id="main-nav">
+      <a href="search.html">🔍 検索</a>
+      <a href="history.html">📜 履歴</a>
+      <a href="favorites.html">⭐ お気に入り</a>
+      <a href="rewards.html">🎁 リワード</a>
+      <a href="settings.html">⚙️ 設定</a>
+      <a href="rank.html">🏆 ランク</a>
+    </nav>
+
+    <section id="points-section">
+      <h3>現在のポイント: <span id="point-count">0</span> pt</h3>
+    </section>
+
+    <section id="theme-section" class="premium-only">
+      <h3>テーマ切り替え</h3>
+      <button onclick="setTheme('light')">ライト</button>
+      <button onclick="setTheme('dark')">ダーク</button>
+      <button onclick="setTheme('green')">うす緑</button>
+    </section>
+  </main>
+
+  <script type="module" src="firebase-init.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
