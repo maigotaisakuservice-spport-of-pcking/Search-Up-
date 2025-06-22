@@ -17,7 +17,7 @@ const ranks = [
   { name: "エリート", point: 5000 },
   { name: "VIP", point: 10000 },
   { name: "アルティメット", point: 20000 }
-  { name: "Search 365 Up For Highest Rank", point: 1000000 }
+  { name: "Search 365 Up For Highest", point: 1000000 }
 ];
 
 auth.onAuthStateChanged(async (user) => {
