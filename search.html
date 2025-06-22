@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>検索 - Search365 Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="search-container">
+    <h1>Search365 Up</h1>
+    <input type="text" id="search-input" placeholder="検索キーワードを入力">
+    <button id="search-button">検索</button>
+
+    <section id="results-section">
+      <h2>検索結果</h2>
+      <div id="results">結果がここに表示されます。</div>
+    </section>
+  </main>
+
+  <script type="module" src="firebase-init.js"></script>
+  <script type="module" src="search.js"></script>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+</body>
+</html>
