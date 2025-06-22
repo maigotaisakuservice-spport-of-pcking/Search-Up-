@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>ランク - Search365 Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-light">
+  <main class="rank-container">
+    <h1>🏆 あなたのランク</h1>
+
+    <section id="rank-status">
+      <h2>現在の称号: <span id="rank-name">読み込み中…</span></h2>
+      <p>ポイント: <span id="current-points">0</span> pt</p>
+      <p>次のランクまで: <span id="next-goal">-</span></p>
+      <div class="progress-bar"><div id="progress" style="width:0%"></div></div>
+    </section>
+
+    <section>
+      <h2>🔓 ランク一覧</h2>
+      <ul id="rank-list"></ul>
+    </section>
+  </main>
+
+  <script type="module" src="firebase-init.js"></script>
+  <script type="module" src="rank.js"></script>
+</body>
+</html>
