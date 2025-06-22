@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>管理者パネル - Search365 Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-light">
+  <main class="admin-container">
+    <h1>🛡️ 管理者パネル</h1>
+
+    <section>
+      <h2>👥 ユーザー管理</h2>
+      <input type="text" id="user-search" placeholder="メールで検索">
+      <button onclick="searchUser()">検索</button>
+      <div id="user-result"></div>
+    </section>
+
+    <section>
+      <h2>📢 広告管理</h2>
+      <input type="text" id="ad-title" placeholder="タイトル">
+      <input type="text" id="ad-body" placeholder="本文">
+      <button onclick="addAd()">追加</button>
+      <div id="ad-list"></div>
+    </section>
+
+    <section>
+      <h2>⚠️ 通報履歴</h2>
+      <div id="report-list">読み込み中...</div>
+    </section>
+
+    <section>
+      <h2>🔄 システムイベント</h2>
+      <button onclick="refreshEvents()">検索イベントを再反映</button>
+    </section>
+  </main>
+
+  <script type="module" src="firebase-init.js"></script>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
