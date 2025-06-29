@@ -53,6 +53,49 @@ body.theme-green {
     </section>
   </main>
 
+//サービス一覧
+<div>
+<a href="https://search-up.f5.si" target="_blank" style="display:inline-block;width:140px;text-align:center;text-decoration:none;color:#333;background:#fff;border-radius:10px;padding:10px;margin:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);transition:transform 0.2s,box-shadow 0.2s;background-color:#d6f5d6;">
+  <img src="https://via.placeholder.com/48?text=S" alt="Search-Up" style="width:48px;height:48px;border-radius:8px;background:#e0ffe0;margin-bottom:6px;"><br>
+  <span style="font-size:14px;font-weight:500;">Search-Up</span>
+</a>
+<a href="https://greendoc.creation.doc.search-up.f5.si" target="_blank" style="display:inline-block;width:140px;text-align:center;text-decoration:none;color:#333;background:#fff;border-radius:10px;padding:10px;margin:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);transition:transform 0.2s,box-shadow 0.2s;background-color:#d6f5d6;">
+  <img src="https://via.placeholder.com/48?text=G" alt="GreenDoc" style="width:48px;height:48px;border-radius:8px;background:#e0ffe0;margin-bottom:6px;"><br>
+  <span style="font-size:14px;font-weight:500;">GreenDoc</span>
+</a>
+<a href="https://webtool.f5.si" target="_blank" style="display:inline-block;width:140px;text-align:center;text-decoration:none;color:#333;background:#fff;border-radius:10px;padding:10px;margin:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);transition:transform 0.2s,box-shadow 0.2s;background-color:#d6f5d6;">
+  <img src="https://via.placeholder.com/48?text=W" alt="Webtool" style="width:48px;height:48px;border-radius:8px;background:#e0ffe0;margin-bottom:6px;"><br>
+  <span style="font-size:14px;font-weight:500;">Webtool</span>
+</a>
+<a href="https://futurechat.search-up.f5.si" target="_blank" style="display:inline-block;width:140px;text-align:center;text-decoration:none;color:#333;background:#fff;border-radius:10px;padding:10px;margin:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);transition:transform 0.2s,box-shadow 0.2s;background-color:#d6f5d6;">
+  <img src="https://via.placeholder.com/48?text=F" alt="FutureChat" style="width:48px;height:48px;border-radius:8px;background:#e0ffe0;margin-bottom:6px;"><br>
+  <span style="font-size:14px;font-weight:500;">FutureChat</span>
+</a>
+<a href="https://japanesechange.search-up.f5.si" target="_blank" style="display:inline-block;width:140px;text-align:center;text-decoration:none;color:#333;background:#fff;border-radius:10px;padding:10px;margin:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);transition:transform 0.2s,box-shadow 0.2s;background-color:#d6f5d6;">
+  <img src="https://via.placeholder.com/48?text=J" alt="日本語校正" style="width:48px;height:48px;border-radius:8px;background:#e0ffe0;margin-bottom:6px;"><br>
+  <span style="font-size:14px;font-weight:500;">日本語校正</span>
+</a>
+<a href="https://maps.search-up.f5.si" target="_blank" style="display:inline-block;width:140px;text-align:center;text-decoration:none;color:#333;background:#fff;border-radius:10px;padding:10px;margin:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);transition:transform 0.2s,box-shadow 0.2s;background-color:#d6f5d6;">
+  <img src="https://via.placeholder.com/48?text=M" alt="迷子対策Map" style="width:48px;height:48px;border-radius:8px;background:#e0ffe0;margin-bottom:6px;"><br>
+  <span style="font-size:14px;font-weight:500;">迷子対策Map</span>
+</a>
+
+<script>
+  // ホバーアニメーション（JSで追加）
+  document.querySelectorAll('a').forEach(a => {
+    a.addEventListener('mouseenter', () => {
+      a.style.transform = 'scale(1.05)';
+      a.style.boxShadow = '0 4px 12px rgba(0,128,0,0.2)';
+    });
+    a.addEventListener('mouseleave', () => {
+      a.style.transform = 'scale(1)';
+      a.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+    });
+  });
+</script>
+</div>
+//サービス一覧ここまで
+
   <script type="module" src="firebase-init.js"></script>
   <script type="module" src="index.js"></script>
 </body>
